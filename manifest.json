@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "permissions test",
+  "description": "permission test",
+  "version": "1.0",
+
+  "background": { "scripts": ["background.js"] },
+
+  "browser_action": {
+      "default_title": "Bleah"
+  },
+
+  "permissions": [ "downloads", "tabs" ],
+  "optional_permissions": [
+    "bookmarks", "cookies", "history", "idle", "notifications",
+    "webNavigation", "webRequest",
+    "http://*/", "https://*/"
+  ]
+}
